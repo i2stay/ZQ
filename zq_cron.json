@@ -1,0 +1,118 @@
+{
+  "name": "中青看点定时任务订阅",
+  "desc": "无",
+  "date": "2022-08-02 20:32:08",
+  "author": "https://t.me/ShaolinTemple1",
+  "resource": "https://raw.githubusercontent.com/wangbo667/wangbo667/main/zq_cron.json.json",
+  "list": [
+    {
+      "name": "中青签到",
+      "type": "cron",
+      "time": "45 2 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/wangbo667/wangbo667/main/zqqd.js"
+      }
+    },
+    {
+      "name": "中青文章",
+      "type": "cron",
+      "time": "35 7,12,18 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/wangbo667/wangbo667/main/zqwz.js"
+      }
+    },
+    {
+      "name": "中青看看赚",
+      "type": "cron",
+      "time": "05 9 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/wangbo667/wangbo667/main/zqkkz1.js"
+      }
+    },
+    {
+      "name": "中青火爆转发",
+      "type": "cron",
+      "time": "10 6,12,18 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/wangbo667/wangbo667/main/zq_share.js"
+      }
+    },
+    {
+      "name": "中青每日任务宝箱领取",
+      "type": "cron",
+      "time": "25 22 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/wangbo667/wangbo667/main/zqbox.js"
+      }
+    },
+    {
+      "name": "中青每日收益统计",
+      "type": "cron",
+      "time": "5 23 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/wangbo667/wangbo667/main/zq_today_score.js"
+      }
+    },
+    {
+      "name": "中青抽奖",
+      "type": "cron",
+      "time": "23 22 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/wangbo667/wangbo667/main/zq_Rotary.js"
+      }
+    },
+    {
+      "name": "中青打卡赚",
+      "type": "cron",
+      "time": "27 5,9 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/wangbo667/wangbo667/main/zq_wakeup.js"
+      }
+    },
+    {
+      "name": "中青搜索赚",
+      "type": "cron",
+      "time": "48 5 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/wangbo667/wangbo667/main/zqssz.js"
+      }
+    },
+    {
+      "name": "中青浏览赚",
+      "type": "cron",
+      "time": "34 0 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/wangbo667/wangbo667/main/zqllz.js"
+      }
+    },
+    {
+      "name": "中青浏览赚",
+      "type": "cron",
+      "time": "34 0 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/wangbo667/wangbo667/main/zqllz.js"
+      }
+    }
+  ]
+}
